@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SkyDocs</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body class="bodyRule">
+    <div class="d">
+        <div class="upperNav">
+          <a class="active" href="#mail">Почта (2)</a>
+          <a href="#staff">Сотрудники</a>
+          <a href="#reference">Справка</a>
+          <a href="#settings">Настройки</a>
+          <a href="#quit">Выход</a>
+        </div>
+
+        <nav class="lowerNav">
+          <a class="active" href="index.html">Главная</a>
+          <a href="#brd">БРД</a>
+          <a href="#control">Контроль</a>
+          <a href="correspondence.html">Корреспонденция</a>
+          <a href="#protocol">Протокола</a>
+          <a href="#ord">ОРД</a>
+          <a href="#appeals">Обращения</a>
+        </nav>
+
+        <div class="feed">
+            <div class="block searchBlock shadow">
+                <input type="text" name="search" class="searchInput">
+                <button class="btn btnAdd">Поиск</button>
+            </div>
+            <div class="row">
+                <div class="block leftBar shadow">
+                    <div>
+                        <a href="#" class="upperCategory active">Входящие</a>
+                        <div class="lowerCategory">
+                            <a href="#">Незарегистрированные</a>
+                            <a href="#">Непринятые</a>
+                        </div>
+                        <a href="#" class="upperCategory">Исходящие</a>
+                        <div class="lowerCategory">
+                            <a href="#">Незарегистрированные</a>
+                            <a href="#">Неотправленные</a>
+                            <a href="#">Неодобренные</a>
+                        </div>
+                    </div>
+
+                    <div class="decorateLine" style="width: 300px; margin: 24px auto;"></div>
+
+                    <div>
+                        <p>Сортировать по:</p>
+                        <select id="sort" name="sort">
+                          <option value="number">По номеру</option>
+                          <option value="dep">По отделу</option>
+                          <option value="date">По дате</option>
+                        </select>
+                    </div>
+
+                    <div class="decorateLine" style="width: 300px; margin: 24px auto;"></div>
+
+                    <div>
+                        <p style="margin-bottom: 0">Дата регистрации:</p>
+                        <div class="row" style="align-items: center;">
+                            <input type="date" name="from">
+                            <p> - </p>
+                            <input type="date" name="to">
+                        </div>
+                    </div>
+
+                    <div class="decorateLine" style="width: 300px; margin: 24px auto;"></div>
+
+                    <a href="create.html"><button class="btn btnAdd">Создать документ</button></a>
+
+                </div>
+                <div class="block rightBar shadow">
+
+                    <div class="groupDoc">
+                        <a href="#" class="cardLink">
+                            <div  class="cardDoc shadow">
+                                <img src="img/paperDislike.png" class="imgDoc">
+                                <div class="leftColumn">
+                                    <p style="font-weight: bold;">Тест входящего документа</p>
+                                    <p>TOO "Art Express Design"</p>
+                                    <p style="color: #C4C4C4">Входящий - непринятый</p>
+                                </div>
+                                <div class="rightColumn">
+                                    <p>REA-A-29-B</p>
+                                    <p>09.11.2021</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="cardLink">
+                            <div  class="cardDoc shadow">
+                                <img src="img/paperQuestion.png" class="imgDoc">
+                                <div class="leftColumn">
+                                    <p style="font-weight: bold;">Тест входящего документа Тест входящего документа </p>
+                                    <p>TOO "Art Express Design"</p>
+                                    <p style="color: #C4C4C4">Входящий - незарегистрированный</p>
+                                </div>
+                                <div class="rightColumn">
+                                    <p>REA-A-29-B</p>
+                                    <p>09.11.2021</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="cardLink">
+                            <div  class="cardDoc shadow">
+                                <img src="img/paperDislike.png" class="imgDoc">
+                                <div class="leftColumn">
+                                    <p style="font-weight: bold;">Тест входящего документа</p>
+                                    <p>TOO "Art Express Design"</p>
+                                    <p style="color: #C4C4C4">Входящий - непринятый</p>
+                                </div>
+                                <div class="rightColumn">
+                                    <p>REA-A-29-B</p>
+                                    <p>09.11.2021</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="cardLink">
+                            <div  class="cardDoc shadow">
+                                <img src="img/paperDislike.png" class="imgDoc">
+                                <div class="leftColumn">
+                                    <p style="font-weight: bold;">Тест входящего документа</p>
+                                    <p>TOO "Art Express Design"</p>
+                                    <p style="color: #C4C4C4">Входящий - непринятый</p>
+                                </div>
+                                <div class="rightColumn">
+                                    <p>REA-A-29-B</p>
+                                    <p>09.11.2021</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="cardLink">
+                            <div  class="cardDoc shadow">
+                                <img src="img/paperQuestion.png" class="imgDoc">
+                                <div class="leftColumn">
+                                    <p style="font-weight: bold;">Тест входящего документа Тест входящего документа </p>
+                                    <p>TOO "Art Express Design"</p>
+                                    <p style="color: #C4C4C4">Входящий - незарегистрированный</p>
+                                </div>
+                                <div class="rightColumn">
+                                    <p>REA-A-29-B</p>
+                                    <p>09.11.2021</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="cardLink">
+                            <div  class="cardDoc shadow">
+                                <img src="img/paperQuestion.png" class="imgDoc">
+                                <div class="leftColumn">
+                                    <p style="font-weight: bold;">Тест входящего документа Тест входящего документа </p>
+                                    <p>TOO "Art Express Design"</p>
+                                    <p style="color: #C4C4C4">Входящий - незарегистрированный</p>
+                                </div>
+                                <div class="rightColumn">
+                                    <p>REA-A-29-B</p>
+                                    <p>09.11.2021</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="cardLink">
+                            <div  class="cardDoc shadow">
+                                <img src="img/paperDislike.png" class="imgDoc">
+                                <div class="leftColumn">
+                                    <p style="font-weight: bold;">Тест входящего документа</p>
+                                    <p>TOO "Art Express Design"</p>
+                                    <p style="color: #C4C4C4">Входящий - непринятый</p>
+                                </div>
+                                <div class="rightColumn">
+                                    <p>REA-A-29-B</p>
+                                    <p>09.11.2021</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" style="margin: 15px auto 0 auto; color: #46497D">Загрузить еще</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <p style="color: #fff; line-height: 80px;">2022</p>
+</footer>
+</html>

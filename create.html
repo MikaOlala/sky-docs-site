@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SkyDocs</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({selector:'textarea'});</script>
+</head>
+<body class="bodyRule">
+    <div class="d">
+        <div class="upperNav">
+          <a class="active" href="#mail">Почта (2)</a>
+          <a href="#staff">Сотрудники</a>
+          <a href="#reference">Справка</a>
+          <a href="#settings">Настройки</a>
+          <a href="#quit">Выход</a>
+        </div>
+
+        <nav class="lowerNav">
+          <a class="active" href="index.html">Главная</a>
+          <a href="#brd">БРД</a>
+          <a href="#control">Контроль</a>
+          <a href="correspondence.html">Корреспонденция</a>
+          <a href="#protocol">Протокола</a>
+          <a href="#ord">ОРД</a>
+          <a href="#appeals">Обращения</a>
+        </nav>
+
+        <div class="feed" style="background-color: #fff">
+            <div class="docBlock">
+                <h2>Входящий документ</h2>    
+                <div class="rowGroup mGroup">
+                    <div class="typeLong">
+                        <p class="inputWTitle">Тема докумета:</p>
+                        <input type="text" name="title">
+                    </div>
+
+                    <div class="typeLong" style="display: flex;">
+                        <p class="checkButton">
+                            <input type="checkbox" id="control" name="control">
+                            <label for="control">Снято с контроля</label>
+                        </p>
+
+                        <p class="checkButton">
+                            <input type="checkbox" id="forService" name="forService">
+                            <label for="forService">Для служебного пользования</label>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rowGroup mGroup">
+                    <div class="typeLong">
+                        <p class="inputWTitle">Входящий №:</p>
+                        <input type="text" name="title">
+
+                        <p class="inputWTitle">Исходящий №:</p>
+                        <input type="text" name="title">
+                    </div>
+
+                    <div class="typeLong">
+                        <div class="rowGroup">
+                            <div class="typeShort">
+                                <p class="inputWTitle">Дата входящего:</p>
+                                <input type="date" name="title">    
+                            </div>
+                            <div class="typeShort">
+                                <p class="inputWTitle">Дата исходящего:</p>
+                                <input type="date" name="title">    
+                            </div>
+                            
+                        </div>
+                        <p class="inputWTitle"> Вид доставки:</p>
+                        <input type="text" name="title" id="deliveryType" placeholder="Выбрать">
+                    </div>
+                </div>
+
+                <div class="rowGroup mGroup">
+                    <div class="typeLong">
+                        <p class="inputWTitle">Корреспондент:</p>
+                        <input type="text" name="title" id="correspondence" placeholder="Выбрать">
+
+                        <p class="inputWTitle">ФИО Корреспондента:</p>
+                        <input type="text" name="title">
+                    </div>
+
+                    <div class="typeLong">
+                        <p class="inputWTitle">Получатель:</p>
+                        <input type="text" name="title" id="receiver" placeholder="Выбрать">
+                    </div>
+                </div>
+
+                <div class="mGroup">
+                    <div class="typeFull">
+                        <p class="inputWTitle">Тип контроля:</p>
+                        <input type="text" name="title" id="controlType" placeholder="Выбрать">
+                    </div>
+                    
+
+                    <div class="rowGroup typeFull">
+                        <div class="typeShort">
+                            <p class="inputWTitle">Приоритет:</p>
+                            <select id="priority" name="priority">
+                              <option value="high">Высокий</option>
+                              <option value="middle">Средний</option>
+                              <option value="low">Низкий</option>
+                            </select>
+                        </div>
+
+                        <div class="typeShort">
+                            <p class="inputWTitle">Срок исполнения:</p>
+                            <input type="date" name="title">
+                        </div>
+                        <div class="typeShort">
+                            <p class="inputWTitle">Кол-во листов:</p>
+                            <input type="number" name="title">
+                        </div>
+                        <div class="typeShort">
+                            <p class="inputWTitle">Кол-во приложений:</p>
+                            <input type="number" name="title">
+                        </div>
+                        
+                    </div>
+
+                    <div class="typeFull">
+                        <p class="inputWTitle">Характер вопроса:</p>
+                        <input type="text" name="title" id="answerNature" placeholder="Выбрать">
+                    </div>
+                </div>
+
+
+                <div class="mGroup">
+                    <div class="rowGroup">
+                        <div class="typeVeryLong">
+                            <p class="inputWTitle">Ответ на исходящий:</p>
+                            <input type="text" name="title" id="answerOut" placeholder="Выбрать">
+                        </div>
+                        <div class="typeShort">
+                            <p class="inputWTitle">Дата ответа:</p>
+                            <input type="date" name="title">
+                        </div>
+                    </div>
+                    
+
+                    <div class="rowGroup">
+                        <div class="typeVeryLong">
+                            <p class="inputWTitle">Номенклатурное дело №:</p>
+                            <input type="text" name="title" id="nomenclature" placeholder="Выбрать">
+                        </div>
+                        <div class="typeShort">
+                            <button class="typeShort btn btnAdd">Загрузить файл</button>
+                        </div>
+                    </div>
+                </div>
+
+                <textarea name="content" rows="6" cols="35"></textarea>
+
+                <button class="btn btnAuth" style="margin-top: 20px">Сохранить</button>
+            </div>
+        </div>
+
+        <div id="nomenclatureModal" class="backModal">
+            <div class="modal">
+                <div class="modal-content shadow">
+                    <span class="close">&times;</span>
+                    <h2>Название графы</h2>
+                    <div>
+                        <p class="checkButton modalCheck">
+                            <input type="checkbox" id="modalCheck" name="modalCheck">
+                            <label for="modalCheck">Выбор Выбор Выбор Выбор Выбор Выбор</label>
+                        </p>
+                        <p class="checkButton modalCheck">
+                            <input type="checkbox" id="modalCheck2" name="modalCheck">
+                            <label for="modalCheck2">Выбор Выбор Выбор Выбор Выбор Выбор</label>
+                        </p>
+                        <p class="checkButton modalCheck">
+                            <input type="checkbox" id="modalCheck3" name="modalCheck">
+                            <label for="modalCheck3">Выбор Выбор Выбор Выбор Выбор Выбор</label>
+                        </p>
+                        <p class="checkButton modalCheck">
+                            <input type="checkbox" id="modalCheck4" name="modalCheck">
+                            <label for="modalCheck4">Выбор Выбор Выбор Выбор Выбор Выбор</label>
+                        </p>
+                        <p class="checkButton modalCheck">
+                            <input type="checkbox" id="modalCheck5" name="modalCheck">
+                            <label for="modalCheck5">Выбор Выбор Выбор Выбор Выбор Выбор</label>
+                        </p>
+                        <p class="checkButton modalCheck">
+                            <input type="checkbox" id="modalCheck6" name="modalCheck">
+                            <label for="modalCheck6">Выбор Выбор Выбор Выбор Выбор Выбор</label>
+                        </p>
+                    </div>
+                    <button class="btn btnAdd" style="margin-top: 30px">Выбрать</button>
+                </div>
+            </div>
+          
+          </div>
+
+        </div>
+        <script>
+            var modal = document.getElementById("nomenclatureModal");
+            var nomenclature = document.getElementById("nomenclature");
+            var answerOut = document.getElementById("answerOut");
+            var answerNature = document.getElementById("answerNature");
+            var controlType = document.getElementById("controlType");
+            var receiver = document.getElementById("receiver");
+            var correspondence = document.getElementById("correspondence");
+            var deliveryType = document.getElementById("deliveryType");
+
+            var span = document.getElementsByClassName("close")[0];
+            nomenclature.onclick = function() {
+              modal.style.display = "block";
+            }
+            answerOut.onclick = function() {
+              modal.style.display = "block";
+            }
+            controlType.onclick = function() {
+              modal.style.display = "block";
+            }
+            receiver.onclick = function() {
+              modal.style.display = "block";
+            }
+            correspondence.onclick = function() {
+              modal.style.display = "block";
+            }
+            deliveryType.onclick = function() {
+              modal.style.display = "block";
+            }
+            answerNature.onclick = function() {
+              modal.style.display = "block";
+            }
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        </script>
+
+    </div>
+</body>
+<footer>
+    <p style="color: #fff; line-height: 80px;">2022</p>
+</footer>
+</html>
